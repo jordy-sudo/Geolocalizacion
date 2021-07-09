@@ -1,0 +1,7 @@
+{
+  "name": "VectorUbicacion",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
