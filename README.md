@@ -13,7 +13,7 @@ Creación de una app con Ionic usando Geolocalización y persistencia de datos
 - Ionic
   - adroid Studio
    - Cordova
-### Da un ejemplo
+### Ejemplo de eejcucion localmente
  #### Instalación 🔧
   - ionic serve --lab para poder utilizar un ambiente ams practico al momento de consultar documentacion
   
