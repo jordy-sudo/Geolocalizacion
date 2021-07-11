@@ -1,20 +1,50 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar class="header">
     <ion-title>
-      Blank
+      Ubicacion
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div id="container"  >
+    <ion-card >
+      <ion-card-header>
+        <ion-avatar class="avatar">
+          <img src="https://okdiario.com/img/2018/02/01/por-que-es-peligroso-compartir-tu-ubicacion-en-las-redes-sociales.jpg" >
+        </ion-avatar>
+        <ion-card-subtitle></ion-card-subtitle>
+        <ion-card-title>Obten tu ubicacion</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-button   (click)="obtener()" color="warning" shape="round" expand="block" size="large" fill="outline">
+          <ion-icon slot="icon-only" name="navigate-circle-outline"></ion-icon>
+        </ion-button>
+        Preciona el boton para poder capturar tu ubicacion en tiempo real
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle></ion-card-subtitle>
+        <ion-avatar class="avatar" >
+          <img src="https://image.freepik.com/vector-gratis/plantilla-formulario-registro-diseno-plano_23-2147971971.jpg" >
+        </ion-avatar>
+        <ion-card-title>Registro de ubicaciones</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+       Observa todas tus ubicaciones guardadas
+       <ion-button (click)="enviar()" color="success" shape="round" expand="block" size="large" fill="outline">
+        <ion-icon slot="icon-only" name="map-outline"></ion-icon>
+      </ion-button>
+      </ion-card-content>
+    </ion-card>
+    
   </div>
 </ion-content>
+<ion-footer>
+  <ion-toolbar class="footer">
+  <p>@ Creacion App Universiad politecnica salesiana</p>
+  </ion-toolbar>
+
+</ion-footer>

@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot="start" clas="btn" [routerLink]="['/home']" color="dark" fill="outline">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </ion-button>
+    <ion-title class="titulo">Registro de ubicaciones</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content  >
+  <ion-card  *ngFor="let registro of mostrar,let indice=index " type="button"  >
+    <ion-card-header *ngIf="registro.latitud">
+      <ion-avatar class="avatar" (click)="abrirMapa(indice)">
+        <img src="https://okdiario.com/img/2018/02/01/por-que-es-peligroso-compartir-tu-ubicacion-en-las-redes-sociales.jpg" >
+      </ion-avatar>
+        <ion-icon (click)="eliminar(indice)" name="trash-outline" size="large" class="eliminar" ></ion-icon>
+
+      <ion-card-title>Ubicacion</ion-card-title>
+    </ion-card-header>
+    <ion-card-content >
+      <p>Latitud: {{registro.latitud}}</p>
+      <p>Longitud: {{registro.longitud}}</p>
+      <p>Nombre: {{registro.name}}  {{registro.fecha| date:'short'}}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+<ion-footer>
+  <ion-toolbar class="footer">
+  <p>@ Creacion App Universiad politecnica salesiana</p>
+  </ion-toolbar>
+
+</ion-footer>

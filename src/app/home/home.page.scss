@@ -4,7 +4,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 50%;
+  top: 45%;
   transform: translateY(-50%);
 }
 
@@ -17,11 +17,27 @@
   font-size: 16px;
   line-height: 22px;
 
-  color: #8c8c8c;
+  color: #b42525;
 
   margin: 0;
 }
 
 #container a {
   text-decoration: none;
+}
+.header{
+  text-align: center;
+  //box-shadow: 0px 0px 30px blue;
+  //color: rgb(209, 4, 4); text-shadow: rgb(95, 80, 80) 0.1em 0.1em 0.2em;
+}
+.contenido{
+  margin-top: 0px;
+}
+.avatar {
+  margin-left: 150px;
+}
+.footer{
+  margin-top: 0px !important;
+  padding: 10px;
+  text-align: center;
 }

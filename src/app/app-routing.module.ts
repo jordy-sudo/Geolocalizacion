@@ -11,6 +11,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'almacen/:id/:lat/:long',///
+    loadChildren: () => import('./almacen/almacen.module').then( m => m.AlmacenPageModule)
+  },
+  {
+    path: 'almacen',///
+    loadChildren: () => import('./almacen/almacen.module').then( m => m.AlmacenPageModule)
+  },
+  {
+    path: 'mapa/:lat/:long',
+    loadChildren: () => import('./mapa/mapa.module').then( m => m.MapaPageModule)
+  },
 ];
 
 @NgModule({
